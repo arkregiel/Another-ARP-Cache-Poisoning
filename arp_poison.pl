@@ -128,3 +128,44 @@ print "\n[*] Poisoning...\n\n";
 &startPoisoning();
 
 __END__
+
+=encoding utf8
+
+=head1 NAME
+
+arp_poison.pl - script performing ARP cache poisoning man-in-the-middle attack
+
+=head1 SYNOPIS
+
+Usage:
+
+$ sudo perl arp_poison.pl -i <interface> -t <IPv4 address> -g <IPv4 address>
+
+Options:
+
+        -i -interface <if name>  name of the network interface
+        -t -target <IPv4>        IPv4 address of the target
+        -g -gateway <IPv4>       IPv4 address of the default gateway
+        -h -help                 prints this help and exits
+
+Example:
+
+$ sudo perl arp_poison.pl -i eth0 -t 192.168.1.100 -g 192.168.1.1
+
+=head1 DESCRIPTION
+
+This script sends gratuitous ARP replies to given host and default gateway
+
+=head1 LICENSE
+
+This is released under the MIT License
+
+=head1 AUTHOR
+
+Artur Kręgiel <arkregiel@gmail.com>
+
+=head1 SEE ALSO
+
+L<https://metacpan.org/pod/Net::ARP>
+
+=cut
