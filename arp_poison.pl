@@ -156,6 +156,10 @@ $ sudo perl arp_poison.pl -i eth0 -t 192.168.1.100 -g 192.168.1.1
 
 This script sends gratuitous ARP replies to given host and default gateway
 
+=head1 DISCLAIMER
+
+This is for educational purposes ONLY. I DO NOT encourage or promote any illegal activities.
+
 =head1 LICENSE
 
 This is released under the MIT License
